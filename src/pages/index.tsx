@@ -6,7 +6,7 @@ export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   //@typescript-eslint/no-unused-vars
-  const [isSliding, setIsSliding] = useState(false);
+  // const [isSliding, setIsSliding] = useState(false);
 
   const images = [
     '/images/first.png',
@@ -18,9 +18,9 @@ export default function Home() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIsSliding(true);
+      // setIsSliding(true);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setTimeout(() => setIsSliding(false), 500); // Duration of the animation
+      // setTimeout(() => setIsSliding(false), 500); // Duration of the animation
     }, interval);
 
     return () => clearInterval(timer); // Clean up the timer on unmount
