@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  //@typescript-eslint/no-unused-vars
   const [isSliding, setIsSliding] = useState(false);
 
   const images = [
@@ -25,19 +26,19 @@ export default function Home() {
     return () => clearInterval(timer); // Clean up the timer on unmount
   }, [images.length, interval]);
 
-  const goToNext = () => {
-    setIsSliding(true);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    setTimeout(() => setIsSliding(false), 500); // Duration of the animation
-  };
+  // const goToNext = () => {
+  //   setIsSliding(true);
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //   setTimeout(() => setIsSliding(false), 500); // Duration of the animation
+  // };
 
-  const goToPrev = () => {
-    setIsSliding(true);
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-    setTimeout(() => setIsSliding(false), 500); // Duration of the animation
-  };
+  // const goToPrev = () => {
+  //   setIsSliding(true);
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  //   );
+  //   setTimeout(() => setIsSliding(false), 500); // Duration of the animation
+  // };
   return (
     <div
       className={`w-full min-h-[100vh] flex flex-col items-center justify-start overflow-x-hidden`}
