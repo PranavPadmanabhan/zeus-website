@@ -3,9 +3,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='w-full h-[15vh] flex items-center justify-between md:justify-evenly  md:px-0 px-[2em] px box-border'>
+    <header className='absolute top-0 w-full h-[15vh] flex items-center justify-between md:justify-between  md:px-[5em] px-[2em] box-border'>
       <Image className='hidden md:flex' alt='logo' height={100} width={280} src={'/images/logo.png'} />
-      <Image className='flex md:hidden' alt='logo' height={50} width={150} src={'/images/logo.png'} />
+      <Image className='flex md:hidden' alt='logo' height={50} width={130} src={'/images/logo.png'} />
       <div className="w-[50%] h-full hidden md:flex items-center justify-evenly pr-[5em]">
         <a href='#' className='text-white text-[1em] hover:font-bold cursor-pointer'>Home</a>
         <a href='#' className='text-white text-[1em] hover:font-bold cursor-pointer'>Products</a>
