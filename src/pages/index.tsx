@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import styles from '@/styles/Main.module.css'
 
 
 export default function Home() {
@@ -59,13 +60,13 @@ export default function Home() {
         <div className="absolute w-full h-screen top-0 bg-transparent flex flex-col items-start justify-center">
           <Header />
           <div className="flex flex-col items-center md:items-start justify-center w-full h-full pl-0 md:pl-[5em] box-border">
-          <p className="hidden md:flex text-white text-[3em] font-bold text-left">Driving Efficiency with<br /> Top-Quality Machinery<br/> and Spare Parts Solutions</p>
+          <p className={`${styles.para} hidden md:flex text-white text-[3em] font-bold text-left`}>Driving Efficiency with<br /> Top-Quality Machinery<br/> and Spare Parts Solutions</p>
           <p className="flex md:hidden text-white text-[1.8em] font-bold text-center">Driving Efficiency with<br /> Top-Quality<br /> Machinery and Spare<br /> Parts Solutions</p>
           <div className="flex flex-col md:flex-row items-center justify-start mt-[23vh] -mb-[23vh] md:mt-10 md:-mb-16 gap-y-5 gap-x-5">
-            <button className="flex items-center justify-center bg-white px-4 py-3 rounded-full gap-x-2"> 
+            <a href="https://wa.me/+971542003798" className="flex items-center justify-center bg-white px-4 py-3 rounded-full gap-x-2 cursor-pointer"> 
               <FaWhatsapp size={24} color="green" />
               <span className="text-black font-[600] text-[1em]">Whatsapp</span>
-            </button>
+            </a>
             <a href="#" className="text-white font-[600] text-[1em] underline">Download Brochure</a>
           </div>
           </div>
