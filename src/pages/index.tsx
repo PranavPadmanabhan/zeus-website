@@ -83,7 +83,7 @@ export default function Home() {
         <div style={{ backgroundImage: 'url(/images/about.png)' }} className="w-[90%] md:w-[50%] h-[50%] md:h-[70%] bg-no-repeat bg-center bg-cover bg-gray-100 z-10 -mt-[35vh] md:mt-0 mr-0 md:mr-9 ml-0 md:-ml-[40vw] rounded-2xl lg:rounded-[30px]"></div>
       </section>
 
-      <section className="w-full h-[100vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[60vh] lg:h-[110vh] bg-white flex flex-col-reverse md:flex-row items-center justify-between py-[2em] box-border">
+      <section className="w-full h-[110vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[60vh] lg:h-[110vh] bg-white flex flex-col-reverse md:flex-row items-center justify-between py-[2em] box-border">
         <div className="w-[90%] md:w-[50%] h-[50%] grid grid-cols-2 gap-x-5 gap-y-5 place-content-center md:h-[70%] bg-transparent z-10 -mt-[35vh] md:mt-0 mr-0 md:ml-9 ml-0 md:-mr-[40vw]">
           <div style={{ backgroundImage: 'url(/images/service1.png)' }} className="h-[20vh] md:h-[16vh] lg:h-[35vh] bg-cover bg-no-repeat bg-center w-full rounded-[20px]  bg-gray-100"></div>
           <div style={{ backgroundImage: 'url(/images/service2.png)' }} className="h-[20vh] md:h-[16vh] lg:h-[35vh] bg-cover bg-no-repeat bg-center w-full rounded-[20px]  bg-gray-100"></div>
