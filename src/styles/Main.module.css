@@ -1,3 +1,21 @@
+.clipright{
+    clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+
+}
+
+.clipleft{
+    clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+@media (max-width: 600px) {
+    .clipright{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .clipleft{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
 @media (max-height: 400px) {
     @media (min-width: 600px) {
         .Header {

@@ -9,8 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        accent:'rgba(235, 207, 203,0.5)'
       },
       fontFamily:{
         poppins:["Poppins", "sans-serif"]
