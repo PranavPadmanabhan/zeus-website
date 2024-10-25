@@ -8,12 +8,21 @@
 
 }
 
+.mapclip{
+    clip-path: polygon(0 0, 81% 0, 40% 100%, 0% 100%);
+
+}
+
 @media (max-width: 600px) {
     .clipright{
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
     .clipleft{
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .mapclip{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    
     }
 }
 @media (max-height: 400px) {
@@ -29,6 +38,54 @@
             transform: scale(0.5);
 
         }
+        .firstSection{
+            height: 90vh;
+        }
+        .secondSection{
+            height: 120vh;
+        }
+        .secondSectionHeading{
+            font-size: 2em;
+        }
+        .secondSectionpara{
+            font-size: 0.8em;
+        }
+        .thirdSection{
+            height: 120vh;
+        }
+        .serviceItem{
+            height: 35vh;
+        }
+        .serviceHeading{
+            font-size: 2em;
+            margin-top: -5vh;
+            margin-bottom: 0;
+        }
+        .servicePara{
+            font-size: 0.8em;
+        }
+        .fourthSection{
+            height: 100vh;
+        }
+        .form{
+            padding-top: 10vh;
+        }
+        .enquiry{
+            font-size: 2em;
+            margin-bottom: 0;
+        }
+        .input{
+            height: 40px;
+        }
+        .textarea{
+            min-height:70px;
+        }
+        .footer{
+            height: 70vh;
+        }
+        .footerItem{
+            font-size: 0.7em;
+        }
         .para {
             font-size: 1.2em;
         }
@@ -37,12 +94,34 @@
 
 
 @media (max-height: 1024px) {
-    @media (min-width: 768px) {}
+    @media (min-width: 768px) {
+        .para{
+            font-size: 2rem;
+        }
+    }
 }
 
+@media (min-height: 1700px) {
+    @media (max-width: 1200px) {
+        .Header{
+            height: 8vh;
+        }
+        .firstSection{
+            height: 40vh;
+        }
+        .serviceItem{
+            height: 10vh;
+        }
+        .footer{
+            height: 20vh;
+        }
+    }
+}
 
 @media (max-height: 1200px) {
-    @media (min-width: 1080px) {}
+    @media (min-width: 1080px) {
+        
+    }
 }
 
 @media (max-height: 1920px) {

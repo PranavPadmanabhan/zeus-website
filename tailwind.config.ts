@@ -9,7 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent:'rgba(235, 207, 203,0.5)'
+        accent:'rgba(235, 207, 203,0.5)',
+        accent_low_op:'rgba(235, 207, 203,0.3)',
+      },
+      backgroundImage:{
+        map:'url(/images/map.png)',
+        enquiry:'url(/images/enquiry.jpeg)'
       },
       fontFamily:{
         poppins:["Poppins", "sans-serif"]
