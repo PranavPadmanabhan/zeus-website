@@ -18,9 +18,8 @@ export default function Home() {
   ];
   const interval = 3000;
 
-
   useEffect(() => {
-   
+  
     const timer = setInterval(() => {
       // setIsSliding(true);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -63,8 +62,8 @@ export default function Home() {
           <Header />
           <div className="flex flex-col items-center md:items-start justify-center w-full h-full pl-0 md:pl-[5em] box-border">
             <p className={`${styles.para} hidden md:flex text-white text-[3em] font-bold text-left`}>Driving Efficiency with<br /> Top-Quality Machinery<br /> and Spare Parts Solutions</p>
-            <p className="flex md:hidden text-white text-[1.8em] font-bold text-center">Driving Efficiency with<br /> Top-Quality<br /> Machinery and Spare<br /> Parts Solutions</p>
-            <div className="flex flex-col md:flex-row items-center justify-start mt-[23vh] -mb-[23vh] md:mt-10 md:-mb-16 gap-y-5 lg:gap-y-[10vh] gap-x-5">
+            <p className={`${styles.para} flex md:hidden text-white text-[1.8em] font-bold text-center`}>Driving Efficiency with<br /> Top-Quality<br /> Machinery and Spare<br /> Parts Solutions</p>
+            <div className={`${styles.buttonContainer} flex flex-col md:flex-row items-center justify-start mt-[23vh] -mb-[23vh] md:mt-10 md:-mb-16 gap-y-5 lg:gap-y-[10vh] gap-x-5`}>
               <a href="https://wa.me/+971542003798" className="flex items-center justify-center bg-white px-4 py-3 rounded-full gap-x-2 cursor-pointer">
                 <FaWhatsapp size={24} color="green" />
                 <span className="text-black font-[600] text-[1em]">Whatsapp</span>
@@ -74,17 +73,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="aboutus" className={`${styles.secondSection} w-full h-[90vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[50vh] lg:h-[110vh] bg-white flex flex-col md:flex-row items-center justify-between py-[2em] box-border`}>
+      <section id="aboutus" className={`${styles.secondSection} w-full h-[100vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[50vh] lg:h-[110vh] bg-white flex flex-col md:flex-row items-center justify-between py-[2em] box-border`}>
         <div className={`${styles.clipright} w-full md:w-[95%] h-full bg-accent flex flex-col md:flex-row items-center justify-start`}>
           <div className="w-full md:w-1/2 h-[80%] md:h-[70%] bg-transparent flex flex-col items-center md:items-start justify-start pl-0 md:pl-16">
             <h1 className={`${styles.secondSectionHeading} text-[28px] md:text-[40px] lg:text-[50px] font-bold mt-12 mb-5 md:mt-3 lg:mt-3 md:mb-5`}>About Us</h1>
             <p className={`${styles.secondSectionpara} text-[1em] md:text-[1.17em] lg:text-[1.3em] max-w-[90%] text-center md:text-left  md:max-w-[95%] `}>At Zeus, we pride ourselves on being a one-stop solution for machinery and spare parts. With years of experience and a dedicated team, we ensure that you receive the highest quality products at competitive prices. Whether it’s a large industrial machine or a simple spare part, we have you covered.</p>
           </div>
         </div>
-        <div style={{ backgroundImage: 'url(/images/about.png)' }} className="w-[90%] md:w-[50%] h-[50%] md:h-[70%] bg-no-repeat bg-center bg-cover bg-gray-100 z-10 -mt-[35vh] md:mt-0 mr-0 md:mr-9 ml-0 md:-ml-[40vw] rounded-2xl lg:rounded-[30px]"></div>
+        <div style={{ backgroundImage: 'url(/images/about.png)' }} className={`${styles.aboutImg} w-[90%] md:w-[50%] h-[50%] md:h-[70%] bg-no-repeat bg-center bg-cover bg-gray-100 z-10 -mt-[35vh] md:mt-0 mr-0 md:mr-9 ml-0 md:-ml-[40vw] rounded-2xl lg:rounded-[30px] `}></div>
       </section>
 
-      <section id="services" className={`${styles.thirdSection} w-full h-[110vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[60vh] lg:h-[110vh] bg-white flex flex-col-reverse md:flex-row items-center justify-between py-[2em] box-border`}>
+      <section id="services" className={`${styles.thirdSection} w-full h-[120vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[60vh] lg:h-[110vh] bg-white flex flex-col-reverse md:flex-row items-center justify-between py-[2em] box-border`}>
         <div className="w-[90%] md:w-[50%] h-[50%] grid grid-cols-2 gap-x-5 gap-y-5 place-content-center md:h-[70%] bg-transparent z-10 -mt-[35vh] md:mt-0 mr-0 md:ml-9 ml-0 md:-mr-[40vw]">
           <div style={{ backgroundImage: 'url(/images/service1.png)' }} className={`${styles.serviceItem} relative h-[20vh] md:h-[16vh] lg:h-[35vh] bg-cover bg-no-repeat bg-center w-full rounded-[20px]  bg-gray-100`}>
             <button className="absolute top-3 right-3 w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-full bg-white flex items-center justify-center">

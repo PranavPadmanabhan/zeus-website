@@ -39,7 +39,7 @@
 
         }
         .firstSection{
-            height: 90vh;
+            height: 110vh;
         }
         .secondSection{
             height: 120vh;
@@ -101,6 +101,7 @@
     }
 }
 
+
 @media (min-height: 1700px) {
     @media (max-width: 1200px) {
         .Header{
@@ -121,6 +122,55 @@
 @media (max-height: 1200px) {
     @media (min-width: 1080px) {
         
+    }
+}
+
+@media (max-height: 400px) {
+    @media (max-width: 750px) {
+        .para{
+            font-size: 1.8em;
+            
+        }
+        .firstSection{
+            height: 150vh;
+        }
+
+        .clipright{
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        }
+        .clipleft{
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        }
+        .mapclip{
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        
+        }
+        .secondSection{
+            height: 160vh;
+        }
+        .secondSectionpara{
+            max-width: 70%;
+        }
+        .aboutImg{
+            height: 100vh;
+            width: 70vw;
+        }
+        .thirdSection{
+            height: 180vh;
+        }
+        .serviceHeading{
+            margin-top: 2vh;
+            margin-bottom: 0;
+        }
+        .servicePara{
+            max-width: 70%;
+        }
+        .serviceItem{
+            height: 50vh;
+        }
+        .fourthSection{
+            height: 180vh;
+        }
     }
 }
 
