@@ -170,7 +170,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="contactus" className={`${styles.fourthSection} w-full h-[110vh] md:h-[80vh] max-h-[600px] bg-transparent bg-map bg-cover md:bg-contain bg-no-repeat bg-right flex items-center justify-center`}>
+      <section id="contactus" className={`${styles.fourthSection} w-full h-[120vh] md:h-[80vh] max-h-[800px] lg:max-h-[800px] bg-transparent bg-map bg-cover md:bg-contain bg-no-repeat bg-right flex items-center justify-center`}>
         <div className="w-full h-full bg-accent_low_op flex flex-col md:flex-row items-center justify-start pt-5 md:pt-0 box-border">
           <div className={`${styles.mapclip} w-[90%] md:w-[60%] h-1/2 md:h-full bg-gray-100 bg-enquiry bg-no-repeat bg-center bg-cover rounded-3xl md:rounded-none`}></div>
           <form onSubmit={sendEmail} ref={form!} className={`${styles.form} w-full md:w-[40%] lg:w-[30%] h-1/2 md:h-full bg-transparent ml-0 md:-ml-[6em] lg:-ml-[9em] mr-0 md:mr-[6em] lg:mr-[9em] flex flex-col items-center md:items-start justify-start pt-0 md:pt-14 box-border`}>
