@@ -52,6 +52,7 @@
         }
         .thirdSection{
             height: 120vh;
+        
         }
         .serviceItem{
             height: 35vh;
@@ -65,17 +66,23 @@
             font-size: 0.8em;
         }
         .fourthSection{
-            height: 100vh;
+            height: 130vh;
+            /* max-height: ; */
         }
         .form{
             padding-top: 10vh;
+            height: 70%;
         }
         .enquiry{
             font-size: 2em;
             margin-bottom: 0;
         }
         .input{
-            height: 40px;
+            height: 45px;
+        }
+        .mapclip{
+            width: 60%;
+            height: 40%;
         }
         .textarea{
             min-height:70px;
