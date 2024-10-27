@@ -6,6 +6,7 @@ import styles from '@/styles/Main.module.css'
 import Image from "next/image";
 import emailjs from '@emailjs/browser';
 import Carousel from "@/components/Carousel";
+import Head from 'next/head';
 
 
 
@@ -90,6 +91,9 @@ export default function Home() {
     <div
       className={`w-full min-h-[100vh] bg-white flex flex-col items-center justify-start overflow-x-hidden`}
     >
+      <Head>
+        <title>Zeus</title>
+      </Head>
       <section id="home" className={`${styles.firstSection} relative w-full h-[98vh] md:h-[60vh] lg:h-[98vh]`}>
         <div className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
