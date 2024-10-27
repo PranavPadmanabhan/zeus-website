@@ -1,10 +1,9 @@
 
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import styles from '@/styles/Main.module.css'
 
 const Carousel = ({ products }: { products: string[] }) => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [animationValue, setAnimationValue] = useState(80)
 
     const goToNext = () => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % products.length);
