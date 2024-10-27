@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '@/styles/Main.module.css'
 
 
-const Header = () => {
+const Header = ({ setModalOpen }:{setModalOpen:React.Dispatch<React.SetStateAction<boolean>>}) => {
   return (
     <header className={`${styles.Header} absolute top-0 w-full h-[15vh] flex items-center justify-between md:justify-between  md:px-[5em] px-[2em] box-border`}>
       <Image className={`${styles.logo} hidden md:flex`} alt='logo' height={100} width={280} src={'/images/logo.png'} />
@@ -14,7 +14,7 @@ const Header = () => {
         <a href='#services' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>Services</a>
         <a href='#aboutus' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>About</a>
       </div>
-      <Image className='flex md:hidden' alt='burger' height={20} width={45} src={'/images/burger.png'} />
+      <Image onClick={() => setModalOpen((prev) => !prev)} className='flex md:hidden' alt='burger' height={20} width={45} src={'/images/burger.png'} />
 
     </header>
   )
