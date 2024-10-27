@@ -48,6 +48,7 @@ export default function Home() {
 
           },
           (error) => {
+            console.log(error)
             setButtonTitle("failed")
             setErrorType("failed")
           },
