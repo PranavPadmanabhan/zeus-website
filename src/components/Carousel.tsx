@@ -1,6 +1,10 @@
+/* eslint-disable simple-import-sort/imports */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable unused-imports/no-unused-vars */
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
 
-const Carousel = ({ products }:{products:any[]}) => {
+const Carousel = ({ products }:{products:string[]}) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animationValue, setAnimationValue] = useState(80)
 
@@ -15,7 +19,7 @@ const Carousel = ({ products }:{products:any[]}) => {
     };
 
     // Determine the indices of items to display around the active item (7 items in total)
-    const visibleItems:any[] = [];
+    const visibleItems:number[] = [];
     for (let i = -5; i <= 5; i++) {
         visibleItems.push((activeIndex + i + products.length) % products.length);
     }

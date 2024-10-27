@@ -1,9 +1,12 @@
+/* eslint-disable simple-import-sort/imports */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable unused-imports/no-unused-vars */
+/* eslint-disable @next/next/no-img-element */
 import Header from "@/components/Header";
 import { useEffect, useRef, useState } from "react";
 import { FaChevronRight, FaPlus, FaWhatsapp } from "react-icons/fa";
 import styles from '@/styles/Main.module.css'
 import Image from "next/image";
-import Carousel from "@/components/Carousel";
 import emailjs from '@emailjs/browser';
 
 
@@ -23,7 +26,7 @@ export default function Home() {
     '/images/third.png',
   ];
   const interval = 3000;
-
+  //@typescript-eslint/no-explicit-any
   const form = useRef<any>();
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement>) => {
@@ -32,8 +35,8 @@ export default function Home() {
     if (form.current.message.value.trim().length > 0 && form.current.user_name.value.trim().length && form.current.user_email.value.trim().length) {
       setButtonTitle("sending..")
       emailjs
-        .sendForm('service_i5ez89g', 'template_g2szmst', form.current, {
-          publicKey: '0NRIz4k1etGXNDDud',
+        .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID!, process.env.NEXT_PUBLIC_TEMPLATE_ID!, form.current, {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY!,
         })
         .then(
           () => {
