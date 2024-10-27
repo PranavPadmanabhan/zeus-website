@@ -1,7 +1,4 @@
-/* eslint-disable simple-import-sort/imports */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable unused-imports/no-unused-vars */
-/* eslint-disable @next/next/no-img-element */
+
 import React, { useEffect, useState } from 'react';
 
 const Carousel = ({ products }:{products:string[]}) => {

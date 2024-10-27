@@ -1,7 +1,4 @@
-/* eslint-disable simple-import-sort/imports */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable unused-imports/no-unused-vars */
-/* eslint-disable @next/next/no-img-element */
+
 import Header from "@/components/Header";
 import { useEffect, useRef, useState } from "react";
 import { FaChevronRight, FaPlus, FaWhatsapp } from "react-icons/fa";
