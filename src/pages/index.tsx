@@ -5,6 +5,7 @@ import { FaChevronRight, FaPlus, FaWhatsapp } from "react-icons/fa";
 import styles from '@/styles/Main.module.css'
 import Image from "next/image";
 import emailjs from '@emailjs/browser';
+import Carousel from "@/components/Carousel";
 
 
 
@@ -72,7 +73,18 @@ export default function Home() {
     return () => clearInterval(timer); // Clean up the timer on unmount
   }, [images.length, interval]);
 
-  // const products = Array.from({ length: 10 }, (_, i) => `Product ${i + 1}`);
+  const products = [
+    '/images/1.png',
+    '/images/2.JPG',
+    '/images/3.JPG',
+    '/images/4.JPG',
+    '/images/5.JPG',
+    '/images/6.JPG',
+    '/images/7.png',
+    '/images/8.JPG',
+    '/images/9.png',
+
+  ];
 
   return (
     <div
@@ -93,7 +105,7 @@ export default function Home() {
         {isModalOpen && (<div className="fixed z-10  flex md:hidden top-0 right-0 w-[75%] h-screen bg-rgba(250,250,250,0.5) backdrop-blur-md flex-col items-center justify-start py-5 transition-transform duration-500">
           <FaPlus onClick={() => setisModalOpen(false)} color='white' size={30} className="rotate-45 self-end mr-6 mb-8 mt-5" />
           <a onClick={() => setisModalOpen(false)} href='#home' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer mt-5`}>Home</a>
-          <a onClick={() => setisModalOpen(false)} href='#' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer mt-5`}>Products</a>
+          <a onClick={() => setisModalOpen(false)} href='#products' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer mt-5`}>Products</a>
           <a onClick={() => setisModalOpen(false)} href='#services' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer mt-5`}>Services</a>
           <a onClick={() => setisModalOpen(false)} href='#aboutus' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer mt-5`}>About</a>
         
@@ -176,8 +188,7 @@ export default function Home() {
           </form>
         </div>
       </section>
-
-{/* <Carousel products={products} /> */ }
+ <Carousel products={products} />
 
 <footer className={`${styles.footer} w-full h-[45vh] md:h-[25vh] lg:h-[35vh] bg-white flex flex-col md:flex-row items-center justify-between px-[1em] md:px-[5em] pt-4 md:pt-0 pb-5 md:pb-0`}>
   <div className="w-[30%] h-full flex flex-col md:flex-row items-center justify-start pb-3 box-border">
@@ -187,8 +198,8 @@ export default function Home() {
   <div className="w-full md:w-[30%] h-full flex flex-row md:flex-col items-start pl-5 box-border justify-center">
     <div className="w-1/2 h-full md:w-full md:h-1/2 flex flex-col items-start justify-start md:hidden">
       <span className="text-black text-[0.8em] ">Tel: </span>
-      <span className="text-black text-[0.8em] ">Mobile: </span>
-      <span className="text-black text-[0.8em] ">Mobile: </span>
+      <span className="text-black text-[0.8em] ">Mobile: +971 542003798</span>
+      <span className="text-black text-[0.8em] ">Mobile: +971 542003797</span>
       <a href="mailto:sales@zeusdxb.com" className="text-black text-[0.8em]">Email: <span className="font-semibold">sales@zeusdxb.com</span></a>
       <a href="mailto:operation@zeusdxb.com" className="text-black text-[0.8em] ml-0 md:ml-5 font-semibold">operation@zeusdxb.com</a>
     </div>
@@ -198,7 +209,7 @@ export default function Home() {
       <span className="text-black text-[0.8em] ">Business Center 03</span>
     </div>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Tel: </span>
-    <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: </span>
+    <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: +971 542003798</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: </span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>PO Box 10050</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Ras Al Khaimah</span>

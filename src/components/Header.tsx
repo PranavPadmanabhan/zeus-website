@@ -11,7 +11,7 @@ const Header = ({ setModalOpen }:{setModalOpen:React.Dispatch<React.SetStateActi
       <Image className='flex md:hidden' alt='logo' height={70} width={180} src={'/images/logo.png'} />
       <div className="w-[50%] h-full hidden md:flex items-center justify-evenly pr-[5em]">
         <a href='#home' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>Home</a>
-        <a href='#' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>Products</a>
+        <a href='#products' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>Products</a>
         <a href='#services' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>Services</a>
         <a href='#aboutus' className={`${styles.headerItem} text-white text-[1em] hover:font-bold cursor-pointer`}>About</a>
       </div>

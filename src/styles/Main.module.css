@@ -89,6 +89,9 @@
         .para {
             font-size: 1.2em;
         }
+        .carousel{
+            height: 80vh;
+        }
     }
 }
 
@@ -114,6 +117,10 @@
             height: 10vh;
         }
         .footer{
+            height: 20vh;
+        }
+
+        .carousel{
             height: 20vh;
         }
     }
@@ -171,6 +178,7 @@
         .fourthSection{
             height: 180vh;
         }
+
     }
 }
 
