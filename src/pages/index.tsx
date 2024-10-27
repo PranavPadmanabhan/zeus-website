@@ -24,15 +24,14 @@ export default function Home() {
   ];
   const interval = 3000;
   //@typescript-eslint/no-explicit-any
-  const form = useRef<any>();
+  const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log(form.current.message.value)
-    if (form.current.message.value.trim().length > 0 && form.current.user_name.value.trim().length && form.current.user_email.value.trim().length) {
+    if (form.current && form!.current.message.value.trim().length > 0 && form!.current.user_name.value.trim().length && form!.current.user_email.value.trim().length) {
       setButtonTitle("sending..")
       emailjs
-        .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID!, process.env.NEXT_PUBLIC_TEMPLATE_ID!, form.current, {
+        .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID!, process.env.NEXT_PUBLIC_TEMPLATE_ID!, form!.current, {
           publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY!,
         })
         .then(
@@ -48,8 +47,7 @@ export default function Home() {
 
 
           },
-          (error: any) => {
-            console.log('FAILED...', error.text);
+          (error) => {
             setButtonTitle("failed")
             setErrorType("failed")
           },
@@ -73,7 +71,7 @@ export default function Home() {
     return () => clearInterval(timer); // Clean up the timer on unmount
   }, [images.length, interval]);
 
-  const products = Array.from({ length: 10 }, (_, i) => `Product ${i + 1}`);
+  // const products = Array.from({ length: 10 }, (_, i) => `Product ${i + 1}`);
 
   return (
     <div
@@ -162,7 +160,7 @@ export default function Home() {
       <section id="contactus" className={`${styles.fourthSection} w-full h-[110vh] md:h-[80vh] max-h-[600px] bg-transparent bg-map bg-cover md:bg-contain bg-no-repeat bg-right flex items-center justify-center`}>
         <div className="w-full h-full bg-accent_low_op flex flex-col md:flex-row items-center justify-start pt-5 md:pt-0 box-border">
           <div className={`${styles.mapclip} w-[90%] md:w-[60%] h-1/2 md:h-full bg-gray-100 bg-enquiry bg-no-repeat bg-center bg-cover rounded-3xl md:rounded-none`}></div>
-          <form onSubmit={sendEmail} ref={form} className={`${styles.form} w-full md:w-[40%] lg:w-[30%] h-1/2 md:h-full bg-transparent ml-0 md:-ml-[6em] lg:-ml-[9em] mr-0 md:mr-[6em] lg:mr-[9em] flex flex-col items-center md:items-start justify-start pt-0 md:pt-14 box-border`}>
+          <form onSubmit={sendEmail} ref={form!} className={`${styles.form} w-full md:w-[40%] lg:w-[30%] h-1/2 md:h-full bg-transparent ml-0 md:-ml-[6em] lg:-ml-[9em] mr-0 md:mr-[6em] lg:mr-[9em] flex flex-col items-center md:items-start justify-start pt-0 md:pt-14 box-border`}>
             <h1 className={`${styles.enquiry} text-black text-[28px] md:text-[40px] font-bold mb-6`}>Enquiry</h1>
             <input required placeholder="Name" type="text" name="user_name" className={`${styles.input} ${errorType === "empty"?"border-2 border-red-500":"border-none"} w-[90%] md:w-[100%] h-[40px] md:h-[50px] bg-white rounded-lg md:rounded-2xl text-black placeholder:text-gray-300 pl-5 focus:outline-none focus:border-none `} />
             <input required placeholder="Email" type="email" name="user_email" className={`${styles.input} ${errorType === "empty"?"border-2 border-red-500":"border-none"} w-[90%] md:w-[100%] h-[40px] md:h-[50px] bg-white rounded-lg md:rounded-2xl text-black placeholder:text-gray-300 pl-5 mt-3 focus:outline-none focus:border-none `} />
