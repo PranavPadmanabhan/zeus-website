@@ -210,7 +210,7 @@ export default function Home() {
     </div>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Tel: </span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: +971 542003798</span>
-    <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: </span>
+    <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: +971 542003797</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>PO Box 10050</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Ras Al Khaimah</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Business Center 03</span>
