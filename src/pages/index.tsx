@@ -201,7 +201,7 @@ export default function Home() {
   </div>
   <div className="w-full md:w-[30%] h-full flex flex-row md:flex-col items-start pl-5 box-border justify-center">
     <div className="w-1/2 h-full md:w-full md:h-1/2 flex flex-col items-start justify-start md:hidden">
-      <span className="text-black text-[0.8em] ">Tel: </span>
+      <span className="text-black text-[0.8em] ">Tel: 0097172687688</span>
       <span className="text-black text-[0.8em] ">Mobile: +971 542003798</span>
       <span className="text-black text-[0.8em] ">Mobile: +971 542003797</span>
       <a href="mailto:sales@zeusdxb.com" className="text-black text-[0.8em]">Email: <span className="font-semibold">sales@zeusdxb.com</span></a>
@@ -212,7 +212,7 @@ export default function Home() {
       <span className="text-black text-[0.8em] ">Ras Al Khaimah</span>
       <span className="text-black text-[0.8em] ">Business Center 03</span>
     </div>
-    <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Tel: </span>
+    <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Tel: 0097172687688</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: +971 542003798</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>Mobile: +971 542003797</span>
     <span className={`${styles.footerItem}text-black text-[1em] hidden md:flex`}>PO Box 10050</span>
