@@ -38,9 +38,9 @@ export default function Home() {
 
 
   const images = [
+    '/images/third.png',
     '/images/second.png',
     '/images/first.png',
-    '/images/third.png',
   ];
   const interval = 3000;
   //@typescript-eslint/no-explicit-any
@@ -135,7 +135,9 @@ export default function Home() {
       }
 
 
-      <section id="home" className={`${styles.firstSection} relative w-full h-[98vh] md:h-[60vh] lg:h-[98vh]`}>
+      {
+        areImagesLoaded && (
+          <section id="home" className={`${styles.firstSection} relative w-full h-[98vh] md:h-[60vh] lg:h-[98vh]`}>
         <div className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
@@ -164,6 +166,8 @@ export default function Home() {
           </div>
         </div>
       </section >
+        )
+      }
       <section id="aboutus" className={`${styles.secondSection} w-full h-[100vh] max-h-full md:max-h-[750px] lg:max-h-full md:h-[50vh] lg:h-[110vh] bg-white flex flex-col md:flex-row items-center justify-between py-[2em] box-border`}>
         <div data-aos="fade-right" className={`${styles.clipright} w-full md:w-[95%] h-full bg-accent flex flex-col md:flex-row items-center justify-start`}>
           <div className="w-full md:w-1/2 h-[80%] md:h-[70%] bg-transparent flex flex-col items-center md:items-start justify-start pl-0 md:pl-16">
