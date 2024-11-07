@@ -1,7 +1,7 @@
 
 import Header from "@/components/Header";
 import { useEffect, useRef, useState } from "react";
-import { FaChevronRight, FaPlus, FaWhatsapp } from "react-icons/fa";
+import { FaChevronRight, FaWhatsapp } from "react-icons/fa";
 import styles from '@/styles/Main.module.css'
 import emailjs from '@emailjs/browser';
 import Carousel from "@/components/Carousel";
