@@ -5,6 +5,8 @@ import React from 'react'
 import styles from '@/styles/Main.module.css'
 import Footer from '@/components/Footer'
 import Drawer from '@/components/Drawer'
+import 'aos/dist/aos.css';
+
 
 const Products = () => {
   const { isModalOpen, setIsModalOpen } = useAppContext()
