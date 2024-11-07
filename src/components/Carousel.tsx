@@ -21,37 +21,11 @@ const Carousel = ({ products }: { products: string[] }) => {
         visibleItems.push((activeIndex + i + products.length) % products.length);
     }
 
-    // useEffect(() => {
-    //     // Dynamically set the number of visible items based on screen width
-    //     const updateItemsToShow = () => {
-    //         if (window.innerWidth <=600) {
-    //             for (let i = 0; i <= 2; i++) {
-    //                 visibleItems.push((activeIndex + i + products.length) % products.length);
-    //                 setAnimationValue(120)
-    //             }
-    //         } else if (window.innerWidth <=1000 ) {
-    //             for (let i = 0; i <= 6; i++) {
-    //                 visibleItems.push((activeIndex + i + products.length) % products.length);
-    //             }
-    //         } else {
-    //             for (let i = 0; i <= 9; i++) {
-    //                 visibleItems.push((activeIndex + i + products.length) % products.length);
-    //             }
-    //         }
-    //     };
-
-    //     // Set initial items to show and add event listener
-    //     updateItemsToShow();
-    //     window.addEventListener('resize', updateItemsToShow);
-
-    //     return () => window.removeEventListener('resize', updateItemsToShow);
-    // }, []);
-
     return (
         <div id='products' className={`${styles.carousel} bg-accent p-4 my-5 md:p-6 h-[30vh] lg:h-[50vh] w-full  mx-auto flex flex-col items-center`}>
             {/* Header Section */}
             <div className="flex justify-between w-full mb-4 px-4">
-                <h2 className="text-lg md:text-2xl font-bold text-black">Products</h2>
+                <h2 className="text-lg md:text-2xl lg:text-[2em] font-bold  text-black">Products</h2>
                 <a href="#" className="text-black font-semibold hover:underline">View More</a>
             </div>
 

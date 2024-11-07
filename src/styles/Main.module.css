@@ -82,7 +82,7 @@
         }
         .mapclip{
             width: 60%;
-            height: 40%;
+            height: 100%;
         }
         .textarea{
             min-height:70px;
@@ -98,6 +98,13 @@
         }
         .carousel{
             height: 80vh;
+        }
+       
+        .grid{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .gridItem{
+            height: 50vh;
         }
     }
 }
@@ -129,6 +136,15 @@
 
         .carousel{
             height: 20vh;
+        }
+        .grid{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .gridItem{
+            height: 15vh;
+        }
+        .suppliers_section{
+            min-height: 50vh;
         }
     }
 }
