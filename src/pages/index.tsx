@@ -109,7 +109,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    preloadImages([...images, ...products, ...suppliers,"/images/enquiry.jpeg"]).then(() => {
+    preloadImages(["/images/logo.png","/images/enquiry.jpeg",'/images/burger.png',...images, ...products, ...suppliers]).then(() => {
       setAreImagesLoaded(true);
     });
   }, [])
