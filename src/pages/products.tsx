@@ -25,8 +25,8 @@ const Products = () => {
               {
                 item.map((prod, index) => (
                   <div key={(i * 13) + index} className={`${styles.gridItem} w-full h-[30vh] lg:h-[40vh] bg-white flex flex-col items-center justify-between`}>
-                    <div style={{ backgroundImage: `url(${prod.url})` }} className="w-full lg:w-[90%] h-[85%] bg-center bg-full bg-no-repeat bg-contain"></div>
-                    <span className={`${styles.gridItemText} text-black mt-1 font-semibold text-[1em]`}>{prod.title}</span>
+                    <div data-aos="fade-up" style={{ backgroundImage: `url(${prod.url})` }} className="w-full lg:w-[90%] h-[85%] bg-center bg-full bg-no-repeat bg-contain"></div>
+                    <span data-aos="fade-up" className={`${styles.gridItemText} text-black mt-1 font-semibold text-[1em]`}>{prod.title}</span>
                   </div>
                 ))
               }
