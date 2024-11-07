@@ -9,11 +9,11 @@ import Head from 'next/head';
 import { useAppContext } from "@/contexts/AppContext";
 import Footer from "@/components/Footer";
 import Suppliers from "@/containers/Suppliers";
-import Image from "next/image";
 import { suppliers } from "@/constants/constants";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Drawer from "@/components/Drawer";
+import { Logo } from "@/components/icons";
 
 const preloadImages = (srcArray: string[]): Promise<void[]> => {
   return Promise.all(
@@ -112,7 +112,6 @@ export default function Home() {
     preloadImages([...images, ...products, ...suppliers]).then(() => {
       setAreImagesLoaded(true);
     });
-    console.log(areImagesLoaded)
   }, [])
 
 
@@ -129,7 +128,7 @@ export default function Home() {
       {
         !areImagesLoaded && (
           <div className="fixed z-[100] top-0 w-full h-[100vh] bg-black flex flex-col items-center justify-center">
-            <Image width={200} height={200} src={'/images/logo.png'} alt="" className="animate-pulse" />
+            <Logo width={150} height={100} className="animate-pulse" />
             <span className="text-white text-[1.1em] mt-2 animate-pulse">Getting ready..</span>
           </div>
         )
