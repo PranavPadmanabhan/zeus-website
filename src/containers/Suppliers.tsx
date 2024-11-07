@@ -22,7 +22,7 @@ const Suppliers = () => {
                     <div data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} key={index} className='hidden w-full h-[10vh] lg:flex items-center justify-evenly my-2'>
                         {
                             list.map((item, i) => (
-                                <img key={(index * 6) + i} src={item} alt={`logo - ${(index * 6) + i}`} className={`w-auto ${(index * 6) + i === 28 || (index * 6) + i === 30 || (index * 6) + i === 35 ? 'max-h-full min-h-[100px] object-fill' : 'max-h-[70%] min-h-[30px]'} object-contain`} />
+                                <img key={(index * 6) + i} src={item} alt={`logo - ${(index * 6) + i}`} className={`w-auto max-h-[70%] min-h-[30px] object-contain`} />
                             ))
                         }
                     </div>

@@ -34,7 +34,7 @@ export const suppliers = [
         '/images/suppliers/logo5.png',
         '/images/suppliers/logo1.png',
         '/images/suppliers/logo2.png',
-        '/images/suppliers/logo3.svg',
+        '/images/suppliers/logo3.png',
         '/images/suppliers/logo4.png',
      
 ]
