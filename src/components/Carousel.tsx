@@ -1,9 +1,11 @@
 
 import React, {  useState } from 'react';
 import styles from '@/styles/Main.module.css'
+import { useRouter } from 'next/router';
 
 const Carousel = ({ products }: { products: string[] }) => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const router = useRouter()
 
     const goToNext = () => {
         setActiveIndex((prevIndex) => (prevIndex + 1) % products.length);
@@ -26,7 +28,7 @@ const Carousel = ({ products }: { products: string[] }) => {
             {/* Header Section */}
             <div className="flex justify-between w-full mb-4 px-4">
                 <h2 className="text-lg md:text-2xl lg:text-[2em] font-bold  text-black">Products</h2>
-                <a href="#" className="text-black font-semibold hover:underline">View More</a>
+                <span onClick={() => router.push("/products")} className="text-black underline cursor-pointer font-semibold hover:underline">View More</span>
             </div>
 
             {/* Carousel Section */}
