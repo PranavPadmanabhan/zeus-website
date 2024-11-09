@@ -161,7 +161,7 @@ export default function Home() {
                 <FaWhatsapp size={24} color="green" />
                 <span className="text-black font-[600] text-[1em]">Whatsapp</span>
               </a>
-              <a data-aos="fade-up"  href="https://drive.google.com/uc?export=download&id=1xK479mjtst6DPvQSUXKWYjQvtOH4pvGt" className="text-white font-[600] text-[1em] underline">Download Brochure</a>
+              <a data-aos="fade-up"  href="https://drive.google.com/uc?export=download&id=1B_kHNzW9huKHmWpsh8Xq1cvgUvcAq5-H" className="text-white font-[600] text-[1em] underline">Download Brochure</a>
             </div>
           </div>
         </div>

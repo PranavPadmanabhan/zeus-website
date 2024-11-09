@@ -39,9 +39,6 @@ const Products = () => {
     preloadImages(["/images/logoblackwithtext.png", '/images/burger-black.png', ...getImages()]).then(() => {
       setAreImagesLoaded(true);
     });
-    // if(typeof window !== undefined){
-    //   window.location.reload()
-    // }
   }, [])
 
 
@@ -49,14 +46,9 @@ const Products = () => {
     AOS.init();
   }, [])
 
-  useEffect(() => {
-    console.log(areImagesLoaded)
-  }, [areImagesLoaded])
-
-
   return (
     <div className='relative w-full min-h-screen flex flex-col items-center justify-start bg-white pt-[10vh] lg:pt-[15vh] box-border'>
-      <Header darkTheme onClick={() => setIsModalOpen(true)} />
+      {areImagesLoaded && <Header darkTheme onClick={() => setIsModalOpen(true)} />}
 
       {
         !areImagesLoaded && (
