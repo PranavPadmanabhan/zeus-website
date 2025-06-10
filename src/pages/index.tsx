@@ -122,7 +122,8 @@ export default function Home() {
       className={`w-full min-h-[100vh] bg-white flex flex-col items-center justify-start overflow-x-hidden scrollbar-hide`}
     >
       <Head>
-        <title>Zeus</title>
+        <title>Zeus Machineries and Spare Parts </title>
+<meta name="description" content="Driving Efficiency with Top-Quality Machinery and Spare Parts Solutions" />
       </Head>
 
       {
