@@ -5,7 +5,6 @@ import { FaChevronRight, FaWhatsapp } from "react-icons/fa";
 import styles from '@/styles/Main.module.css'
 import emailjs from '@emailjs/browser';
 import Carousel from "@/components/Carousel";
-import Head from 'next/head';
 import { useAppContext } from "@/contexts/AppContext";
 import Footer from "@/components/Footer";
 import Suppliers from "@/containers/Suppliers";
@@ -14,6 +13,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Drawer from "@/components/Drawer";
 import { Logo } from "@/components/icons";
+
 
 
 const preloadImages = (srcArray: string[]): Promise<void[]> => {
