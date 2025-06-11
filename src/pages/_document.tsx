@@ -22,6 +22,16 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1GFCSFQV25"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1GFCSFQV25');
+</script>
+
     </Html>
   );
 }
