@@ -15,6 +15,7 @@ import 'aos/dist/aos.css';
 import Drawer from "@/components/Drawer";
 import { Logo } from "@/components/icons";
 
+
 const preloadImages = (srcArray: string[]): Promise<void[]> => {
   return Promise.all(
     srcArray.map((src) => {
@@ -121,11 +122,7 @@ export default function Home() {
     <div
       className={`w-full min-h-[100vh] bg-white flex flex-col items-center justify-start overflow-x-hidden scrollbar-hide`}
     >
-      <Head>
-        <title>Zeus Machineries and Spare Parts </title>
-<meta name="description" content="Driving Efficiency with Top-Quality Machinery and Spare Parts Solutions" />
-      </Head>
-
+      
       {
         !areImagesLoaded && (
           <div className="fixed z-[100] top-0 w-full h-[100vh] bg-black flex flex-col items-center justify-center">
